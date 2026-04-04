@@ -40,6 +40,39 @@ header h1 {
     font-size: 2em;
 }
 
+.slider {
+    position: relative;
+    width: 350px;
+    height: auto;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
 .cta-btn {
     display: inline-block;
     margin-top: 20px;
