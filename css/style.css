@@ -29,6 +29,7 @@ header p {
     padding: 40px;
     align-items: center;
     justify-content: center;
+    gap: 0px;   /* controls spacing between slider and text */
 }
 
 .hero img {
@@ -37,8 +38,8 @@ header p {
 }
 
 .hero-text {
-    max-width: 500px;
-    margin-left: 40px;
+    max-width: 400px;
+    margin-left: 0;  /* remove the forced gap */
 }
 
 .hero-text h2 {
@@ -47,7 +48,7 @@ header p {
 
 .slider {
     position: relative;
-    width: 350px;
+    width: 450px;
     aspect-ratio: 1 / 1; /* keeps it perfectly stable */
     overflow: hidden;
 }
